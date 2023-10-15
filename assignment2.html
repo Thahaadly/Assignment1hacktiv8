@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <input type="text" id="inputField" value="0" readonly >
+    </div>
+    <div class="buttons">
+      <button class="button operation" onclick="inputClear()">C</button>
+      <button class="button" onclick="backspace()">←</button>
+      <button class="button operation" onclick="add()">+</button>
+      <button class="button operation" onclick="subtract()">-</button>
+      <button class="button operation" onclick="multiply()">x</button>
+      <button class="button operation" onclick="divide()">/</button>
+      <button class="button" onclick="toInput('1')">1</button>
+      <button class="button" onclick="toInput('2')">2</button>
+      <button class="button" onclick="toInput('3')">3</button>
+      <button class="button" onclick="toInput('4')">4</button>
+      <button class="button" onclick="toInput('5')">5</button>
+      <button class="button" onclick="toInput('6')">6</button>
+      <button class="button" onclick="toInput('7')">7</button>
+      <button class="button" onclick="toInput('8')">8</button>
+      <button class="button" onclick="toInput('9')">9</button>
+      <button class="button" onclick="toInput('0')">0</button>
+      <button class="button" onclick="toInput('.')">.</button>
+      <button style="background-color: orangered;" class="button operation" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <div id="root"></div>
+  <script src="index.js"></script>
+</body>
+</html>
